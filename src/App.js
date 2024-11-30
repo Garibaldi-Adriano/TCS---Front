@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Navbar from './components/Navbar';
 import EmConstrucao from './components/EmConstrucao';
+import NotFound from './pages/404';
+import Footer from './components/Footer';
 
 const darkTheme = createTheme({
   palette: {
@@ -34,7 +36,9 @@ function App() {
           <Route path="/manutencao" element={<EmConstrucao />} />
           <Route path="/relatorios" element={<EmConstrucao />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Router>
     </ThemeProvider>
   );

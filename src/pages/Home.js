@@ -124,20 +124,7 @@ function Home() {
           </Button>
         </Paper>
 
-        {/* Footer */}
-        <Box
-          sx={{
-            textAlign: 'center',
-            py: 3,
-            mt: 4,
-            backgroundColor: '#1a237e',
-            color: '#fff',
-          }}
-        >
-          <Typography variant="body1">
-            &copy; {new Date().getFullYear()} Sistema de Locação de Veículos. Todos os direitos reservados.
-          </Typography>
-        </Box>
+
       </Container>
     </ThemeProvider>
   );
